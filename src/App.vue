@@ -13,7 +13,7 @@ const add=()=>{
     done: false,
     created: new Date().getTime()
   })
-  console.log(task.value);
+  task.value="";
 }
 const remove=(task)=>{
   todos.value=todos.value.filter((t)=> t !==task);
